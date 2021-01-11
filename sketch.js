@@ -1,6 +1,6 @@
 'use strict';
 
-let IMAGE_SIZE = 350;
+let IMAGE_SIZE = 250;
 const RAND_VALUE = IMAGE_SIZE / 4;
 const MARGIN = IMAGE_SIZE / 2;
 const PADDING = IMAGE_SIZE * 0.1;
