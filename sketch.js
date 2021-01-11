@@ -1,6 +1,6 @@
 'use strict';
 
-let IMAGE_SIZE = 250;
+let IMAGE_SIZE = 350;
 const RAND_VALUE = IMAGE_SIZE / 4;
 const MARGIN = IMAGE_SIZE / 2;
 const PADDING = IMAGE_SIZE * 0.1;
@@ -14,6 +14,7 @@ function setup() {
   const totalY = GRIDBOX * rows; 
   
   createCanvas(totalX, totalY, SVG);
+  
   
   colorMode(HSB, 100);
   ellipseMode(CENTER);
@@ -56,4 +57,8 @@ function keyPressed() {
     redraw();
     break;
   }
+}
+
+function mousePressed() {
+  redraw();
 }
