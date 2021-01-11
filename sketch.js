@@ -7,7 +7,7 @@ const PADDING = IMAGE_SIZE * 0.1;
 const START = IMAGE_SIZE / 2 + PADDING + MARGIN;
 const GRIDBOX = IMAGE_SIZE + PADDING;
 let rows = 1;
-let columns = 3;
+let columns = 1;
 
 function setup() {
   const totalX = GRIDBOX * columns; 
@@ -59,6 +59,10 @@ function keyPressed() {
   }
 }
 
-function mousePressed() {
+// function mousePressed() {
+//   redraw();
+// }
+
+function touchStarted() {
   redraw();
 }
